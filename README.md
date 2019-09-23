@@ -1,2 +1,2 @@
 # UKIMexpo-project
-Ini merupakan website untuk EXPO UKIM 2019 yang dibuat oleh Program Studi Informatika
+Ini merupakan website untuk EXPO UKIM 2019 di SMA Negeri 1 Kota Ambon yang dibuat oleh Program Studi Informatika dalam rangka memperkenalkan Pembuatan Website.
