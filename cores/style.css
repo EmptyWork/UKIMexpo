@@ -84,3 +84,18 @@ a,a:hover,a:active,a:focus {
     }
 
 }
+
+@media screen and (max-width: 320px) {
+    body {
+        font-size: 0.8em;
+    }
+
+    .landing-tx {
+        font-size: 1em;
+        margin-left: 1em;
+    }
+
+    .landing-tx h2 {
+        margin-left: -1em;
+    }
+}
