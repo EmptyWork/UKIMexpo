@@ -9,6 +9,7 @@ this file only for frameworking purpose.
 
 /* external and includes code */
 @import 'style.css';
+@import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
 
 /* default re-adjust code for browser */
 * {
