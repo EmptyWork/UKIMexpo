@@ -91,8 +91,8 @@ a,a:hover,a:active,a:focus {
     }
 
     .landing-tx {
-        font-size: 1em;
-        margin-left: 1em;
+        font-size: 0.9em;
+        letter-spacing: 0.9em;
     }
 
     .landing-tx h2 {
