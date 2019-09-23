@@ -32,10 +32,16 @@ body {
 
 #grid.col3-grid {
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
 }
 
 #grid img {
     width: 100%;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
 }
 
 #middle {
@@ -91,6 +97,10 @@ body {
 
     #landing::after {
         height: 100vh;
+    }
+
+    #grid img {
+        margin-bottom: 10px;
     }
 
     .landing-tx {
