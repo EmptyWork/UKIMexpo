@@ -28,6 +28,9 @@ body {
 
 #grid {
     display: grid;
+}
+
+#grid.col3-grid {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -48,16 +51,45 @@ body {
     height: 70vh;
 }
 
+#landing::after {
+    content: "";
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+#footer {
+    width: 100%;
+    height: 140px;
+}
+
+.media-3md {
+    margin-top: -10px;
+}
+
+.media-3md img {
+    width: 30px;
+}
+
 .landing-tx {
     top: 30%;
     left: 50%;
     transform: translate(-50%,-50%);
     position: absolute;
+    z-index: 5;
 }
 
 @media screen and (max-width: 800px) {
 
     #landing {
+        height: 100vh;
+    }
+
+    #landing::after {
         height: 100vh;
     }
 
@@ -71,9 +103,7 @@ body {
         margin-top: 0;
     }
 
-    #grid {
+    #grid.col3-grid {
         grid-template-columns: 1fr;
     }
 }
-
-/* local style */
