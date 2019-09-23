@@ -70,6 +70,10 @@ body {
         padding: 20px;
         margin-top: 0;
     }
+
+    #grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* local style */
