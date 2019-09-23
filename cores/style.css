@@ -1,0 +1,86 @@
+/* 
+eazbi_default_themes - 22 September 2019
+created by Stevarth Hoke for eazbi.rf.gd
+using HTML5 and CSS3 with Native Javascript
+
+work_id: stv_w1909_77-01
+this file only for coloring and styling purpose.
+*/
+
+:root {
+    --prc: #cecece;
+    --bc : #000000;
+    --adc : #63d25e;
+    --addc  : #d2d4d6;
+}
+
+body {
+    background: #fff;
+    color: #303030;
+    font-size: 1.2em;
+    font-family: 'Exo 2', sans-serif;
+    line-height: 30px;
+}
+
+a,a:hover,a:active,a:focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+#middle {
+    background: #fff;
+}
+
+#middle h1, #middle h2, #middle h3, #middle h4, #middle h5, #middle h6 {
+    color: #000000;
+}
+
+#landing {
+    background: var(--bc);
+    background-image: linear-gradient(45deg, #80e4a5, #2d2566);
+}
+
+.landing-tx {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2em;
+    margin-left: 2em;
+    font-size: 1.6em;
+}
+
+.landing-tx h2 {
+    letter-spacing: 0;
+    margin-left: -2em;
+}
+
+.tx-mddl {
+    text-align: center;
+}
+
+.btn {
+    background: #000;
+    color: #fff;
+    transition: all 200ms ease-in-out;
+}
+
+.btn:hover {
+    background: #303030;
+    color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 1em;
+    }
+
+    .landing-tx {
+        font-size: 1.2em;
+        margin-left: 1.2em;
+    }
+
+    .landing-tx h2 {
+        margin-left: -1.2em;
+    }
+
+}
