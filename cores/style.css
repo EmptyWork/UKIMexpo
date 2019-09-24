@@ -10,7 +10,7 @@ this file only for coloring and styling purpose.
 :root {
     --prc: #cecece;
     --bc : #000000;
-    --adc : #63d25e;
+    --adc : #208245;
     --addc  : #d2d4d6;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 a,a:hover,a:active,a:focus {
-    color: inherit;
+    color: var(--adc);
     text-decoration: none;
 }
 
@@ -32,7 +32,7 @@ a,a:hover,a:active,a:focus {
 } */
 
 #middle h1, #middle h2, #middle h3, #middle h4, #middle h5, #middle h6 {
-    color: #000000;
+    color: var(--adc);
 }
 
 #landing {
