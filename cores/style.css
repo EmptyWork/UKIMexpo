@@ -58,15 +58,12 @@ a,a:hover,a:active,a:focus {
     text-align: center;
     color: #fff;
     text-transform: uppercase;
-    letter-spacing: 2em;
-    margin-left: 2em;
     font-size: 1.6em;
     line-height: 2em;
 }
 
 .landing-tx h2 {
-    letter-spacing: 0;
-    margin-left: -2em;
+    content: "";
 }
 
 .tx-mddl {
@@ -95,11 +92,10 @@ a,a:hover,a:active,a:focus {
 
     .landing-tx {
         font-size: 1.2em;
-        margin-left: 1.2em;
     }
 
     .landing-tx h2 {
-        margin-left: -1.2em;
+        content: "";
     }
 
 }
