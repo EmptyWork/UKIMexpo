@@ -9,8 +9,18 @@
     <meta name="description" content="Website yang dibuat secara khusus untuk menjadi showcase dalam materi 'Pengenalan Pembuatan Website' " />
     <title>UKIMexpo Informatika</title>
     <link rel="stylesheet" href="cores/main.css">
+    <script>
+        function displayNextImage() {x = (x === images.length - 1) ? 0 : x + 1;document.getElementById("landing").style.backgroundImage = images[x];}
+        function displayPreviousImage() {x = (x <= 0) ? images.length - 1 : x - 1;document.getElementById("landing").style.backgroundImage = images[x];}
+        function startTimer() {setInterval(displayNextImage, 10000);}
+
+        var images = [], x = -1;
+        images[0] = "url('img/niclas-illg-wzVQp_NRIHg-unsplash.jpg')";
+        images[1] = "url('img/plush-design-studio-q10VITrVYUM-unsplash.jpg')";
+        images[2] = "url('img/header.jpg')";
+    </script>
 </head>
-<body>
+<body onload="startTimer()">
     <div id="landing">
         <!-- <div class="landing-tx">
             <h1>EXPO</h1>

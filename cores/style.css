@@ -43,6 +43,7 @@ a,a:hover,a:active,a:focus {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: 300ms all ease-in;
 }
 
 #landing::after {
@@ -87,7 +88,7 @@ a,a:hover,a:active,a:focus {
     }
 
     #landing {
-        background-image: url(../img/header.jpg) !important;
+        background-image: url(../img/header.jpg);
     }
 
     .landing-tx {
