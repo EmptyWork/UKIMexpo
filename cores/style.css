@@ -31,6 +31,10 @@ a,a:hover,a:active,a:focus {
     color: var(--adc);
 }
 
+*[w] {
+    color: red;
+}
+
 /* #middle {
     background: #fff;
 } */
