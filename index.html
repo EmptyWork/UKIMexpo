@@ -1,31 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- work_id: stv_w1909_77-01  -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#0d0d0d" />
-    <meta name="description" content="Website yang dibuat secara khusus untuk menjadi showcase dalam materi 'Pengenalan Pembuatan Website' " />
+    <meta name="description"
+        content="Website yang dibuat secara khusus untuk menjadi showcase dalam materi 'Pengenalan Pembuatan Website' " />
     <title>UKIMexpo Informatika</title>
     <link rel="stylesheet" href="cores/main.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script>
-        function displayNextImage() {x = (x === images.length - 1) ? 0 : x + 1;document.getElementById("landing").style.backgroundImage = images[x];}
-        function displayPreviousImage() {x = (x <= 0) ? images.length - 1 : x - 1;document.getElementById("landing").style.backgroundImage = images[x];}
-        function startTimer() {setInterval(displayNextImage, 10000);}
+        function displayNextImage() {
+            x = (x === images.length - 1) ? 0 : x + 1;
+            document.getElementById("landing").style.backgroundImage = images[x];
+        }
 
-        var images = [], x = -1;
+        function displayPreviousImage() {
+            x = (x <= 0) ? images.length - 1 : x - 1;
+            document.getElementById("landing").style.backgroundImage = images[x];
+        }
+
+        function startTimer() {
+            setInterval(displayNextImage, 10000);
+        }
+
+        var images = [],
+            x = -1;
         images[0] = "url('img/img_s1.jpg')";
         images[1] = "url('img/img_s2.jpg')";
         images[2] = "url('img/img_s3.jpg')";
         images[3] = "url('img/img_s4.jpg')";
         images[4] = "url('img/img_s5.jpg')";
-        images[5] = "url('img/header.jpg')";
+        images[5] = "url('img/img_s6.jpg')";
+        images[6] = "url('img/header.jpg')";
     </script>
 </head>
+
 <body onload="startTimer()">
-    <div class="sidename"><div class="brand">UKIMexpo Teknik Informatika</div></div>
+    <div class="sidename">
+        <div class="brand">UKIMexpo Teknik Informatika</div>
+    </div>
     <div id="landing">
         <div class="col2-logo">
             <img id="un_logo" src="img/ukim.png" alt="Universitas Kristen Indonesia Maluku">
@@ -37,17 +54,23 @@
     </div>
     <div id="middle">
         <h3>Program Studi Informatika</h3>
-        <p>Sebagai Program Studi baru di UKIM (Universitas Kristen Indonesia Maluku), kami tidak mau kalah dengan mahasiswa-mahasiswi dari Program Studi lain.</p>
+        <p>Sebagai Program Studi baru di UKIM (Universitas Kristen Indonesia Maluku), kami tidak mau kalah dengan
+            mahasiswa-mahasiswi dari Program Studi lain.</p>
         <h4>Apa itu Program Studi Informatika?</h4>
-        <p>Program studi Informatika merupakan Program studi yang baru di bentuk pada Bulan Juni 2019 di Universitas Kristen Indonesia Maluku dan untuk saat ini memiliki 60 mahasiswa-mahasiswi pejuang Titel <i><b>S.Kom</b></i>, Prodi Informatika diharapkan menjadi Prodi yang bisa menghasilkan para calon professional yang bisa menguasai <i><b>Application Developer</b></i> dan <i><b>Network Engineering</b></i></p>
+        <p>Program studi Informatika merupakan Program studi yang baru di bentuk pada Bulan Juni 2019 di Universitas
+            Kristen Indonesia Maluku dan untuk saat ini memiliki 60 mahasiswa-mahasiswi pejuang Titel
+            <i><b>S.Kom</b></i>, Prodi Informatika diharapkan menjadi Prodi yang bisa menghasilkan para calon
+            professional yang bisa menguasai <i><b>Application Developer</b></i> dan <i><b>Network Engineering</b></i>
+        </p>
         <h5>Media Sosial dan Website</h5>
         <div class="media-3md">
             <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/ms-fico.svg" alt="Facebook"></a>
             <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/ms-iico.png" alt="Instagram"></a>
-            <a href="http://Informatikaukim.blogspot.com" target="_blank" rel="noopener noreferrer"><img src="img/website.png" alt="Website"></a>
+            <a href="http://Informatikaukim.blogspot.com" target="_blank" rel="noopener noreferrer"><img
+                    src="img/website.png" alt="Website"></a>
         </div>
         <h3>Project - Project Pada UKIMexpo</h3>
-        <small>Daftar project-project yang akan di tampilkan selain 'Pengenalan Pembuatan Website'</small><br/><br/>
+        <small>Daftar project-project yang akan di tampilkan selain 'Pengenalan Pembuatan Website'</small><br /><br />
         <div id="grid" class="col3-grid">
             <img src="img/placeholder_1.jpg" alt="placeholder">
             <img src="img/placeholder_2.jpg" alt="placeholder">
@@ -72,12 +95,15 @@
             <div id="grid" class="col3-grid grid-footer">
                 <div>
                     <h4>Ketentuan dan Pembuat</h4>
-                        <div class="media-3md">
-                            <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/ms-fico.svg" alt="Facebook"></a>
-                            <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/ms-iico.png" alt="Instagram"></a>
-                            <a href="http://Informatikaukim.blogspot.com" target="_blank" rel="noopener noreferrer"><img src="img/website.png" alt="Website"></a>
-                        </div>
-                    &copy;Copyright 2019 - UKIMexpo SMA Negeri 1 Kota Ambon<br/>
+                    <div class="media-3md">
+                        <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/ms-fico.svg"
+                                alt="Facebook"></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/ms-iico.png"
+                                alt="Instagram"></a>
+                        <a href="http://Informatikaukim.blogspot.com" target="_blank" rel="noopener noreferrer"><img
+                                src="img/website.png" alt="Website"></a>
+                    </div>
+                    &copy;Copyright 2019 - UKIMexpo SMA Negeri 1 Kota Ambon<br />
                     Pembuatan oleh <span it="p">Team Pembuatan Website UKIMexpo Prodi Informatika</span>
                 </div>
                 <div>
@@ -93,11 +119,14 @@
                 <div>
                     <h4>Produksi Informatika UKIM 2019</h4>
                     <ol>
-                        <a href="http://informatikaukim.blogspot.com" target="_blank" rel="noopener noreferrer"><li>Website Resmi Informatika UKIM</li></a>
+                        <a href="http://informatikaukim.blogspot.com" target="_blank" rel="noopener noreferrer">
+                            <li>Website Resmi Informatika UKIM</li>
+                        </a>
                     </ol>
                 </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
