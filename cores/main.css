@@ -54,6 +54,7 @@ body {
 }
 
 #landing {
+    display: relative;
     width: 100%;
     height: 70vh;
 }
@@ -83,12 +84,23 @@ body {
     width: 30px;
 }
 
-.landing-tx {
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.sidename {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 100vh;
+    z-index: 3;
+}
+
+.sidename .brand {
+    transform: translate(-50%) rotate(-90deg);
     position: absolute;
-    z-index: 5;
+    top: 20%;
+    left: 0;
+    display: block;
+    width: 100vh;
+    margin-left: 17px;
 }
 
 @media screen and (max-width: 800px) {
@@ -105,10 +117,6 @@ body {
         margin-bottom: 10px;
     }
 
-    .landing-tx {
-        top: 50%;
-    }
-
     #middle {
         width: 100%;
         padding: 20px;
@@ -117,5 +125,20 @@ body {
 
     #grid.col3-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .sidename {
+        right: 0;
+        top: 0;
+        height: 50px;
+        width: 100vw;
+    }
+
+    .sidename .brand {
+        transform: rotate(0deg);
+        position: absolute;
+        display: block;
+        width: 100vw;
+        font-weight: 900;
     }
 }

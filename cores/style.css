@@ -55,16 +55,12 @@ a,a:hover,a:active,a:focus {
     color: #d2d4d6;
 }
 
-.landing-tx {
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1.6em;
-    line-height: 2em;
+.sidename {
+    background: #151515;
 }
 
-.landing-tx h2 {
-    content: "";
+.sidename .brand {
+    color:#fff;
 }
 
 .tx-mddl {
@@ -90,28 +86,10 @@ a,a:hover,a:active,a:focus {
     #landing {
         background-image: url(../img/header.jpg);
     }
-
-    .landing-tx {
-        font-size: 1.2em;
-    }
-
-    .landing-tx h2 {
-        content: "";
-    }
-
 }
 
 @media screen and (max-width: 330px) {
     body {
         font-size: 0.8em;
-    }
-
-    .landing-tx {
-        font-size: 0.9em;
-        letter-spacing: 0.9em;
-    }
-
-    .landing-tx h2 {
-        margin-left: -1em;
     }
 }
