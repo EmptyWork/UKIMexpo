@@ -24,7 +24,11 @@ body {
 
 a,a:hover,a:active,a:focus {
     color: var(--adc);
-    text-decoration: none;
+    font-style: oblique;
+}
+
+*[it] {
+    color: var(--adc);
 }
 
 /* #middle {
@@ -37,10 +41,10 @@ a,a:hover,a:active,a:focus {
 
 #landing {
     background: var(--bc);
-    background-image: linear-gradient(45deg, #80e4a5, #2d2566);
-    /* background-image: url(../img/header.jpg); */
+    /* background-image: linear-gradient(45deg, #80e4a5, #2d2566); */
+    background-image: url(../img/header.jpg);
     background-attachment: fixed;
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     transition: 300ms all ease-in;
@@ -51,7 +55,7 @@ a,a:hover,a:active,a:focus {
 }
 
 #footer {
-    background: #303030;
+    background: #000;;
     color: #d2d4d6;
 }
 
@@ -81,10 +85,6 @@ a,a:hover,a:active,a:focus {
 @media screen and (max-width: 800px) {
     body {
         font-size: 1em;
-    }
-
-    #landing {
-        background-image: url(../img/header.jpg);
     }
 }
 

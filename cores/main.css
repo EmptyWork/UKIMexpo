@@ -37,6 +37,15 @@ body {
     justify-items: center;
 }
 
+#grid.col3-grid.grid-footer {
+    justify-items: start;
+    align-items: flex-start;
+}
+
+#grid.col3-grid.grid-footer div {
+    padding: 10px;
+}
+
 #grid img {
     width: 100%;
     border-radius: 50%;
@@ -72,8 +81,11 @@ body {
 
 #footer {
     width: 100%;
-    height: 200px;
     bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    position: relative;
 }
 
 .media-3md {
@@ -81,7 +93,8 @@ body {
 }
 
 .media-3md img {
-    width: 30px;
+    width: 30px !important;
+    height: 30px !important;
 }
 
 .sidename {
@@ -125,6 +138,10 @@ body {
 
     #grid.col3-grid {
         grid-template-columns: 1fr;
+    }
+
+    #grid.col3-grid.grid-footer div {
+        width: 100%;
     }
     
     .sidename {
