@@ -35,6 +35,12 @@ a,a:hover,a:active,a:focus {
     color: red;
 }
 
+q {
+    padding: 10px;
+    color: #208245;
+    font-style: italic;
+}
+
 /* #middle {
     background: #fff;
 } */
@@ -79,6 +85,28 @@ a,a:hover,a:active,a:focus {
     background: #000;
     color: #fff;
     transition: all 200ms ease-in-out;
+}
+
+.right-col2 {
+    border: 1px solid #cecece;
+    font-size: 0.8em;
+}
+
+.right-col2 p {
+    text-align: left;
+}
+
+.right-col2 h2 {
+    background: var(--adc);
+    color: #fff !important;
+}
+
+.right-col2 ol {
+    text-align: left;
+}
+
+.col2-logo h1, .col2-logo small {
+    color: #fff;
 }
 
 .btn:hover {

@@ -88,6 +88,35 @@ body {
     position: relative;
 }
 
+.col2-grid {
+    grid-template-columns: 1fr 30%;
+    grid-template-areas: 'info-p bpa-area';
+}
+
+.left-col2 {
+    grid-area: info-p;
+}
+
+.right-col2 {
+    grid-area: bpa-area;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.right-col2 img {
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0 auto;
+}
+
+.right-col2 h2 {
+    margin: -10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
 .col2-logo {
     display: grid;
     position: absolute;
@@ -104,7 +133,6 @@ body {
 }
 
 .col2-logo h1 {
-    color: #fff;
     padding: 0;
     margin: 0;
 }
@@ -174,6 +202,11 @@ body {
         width: 100%;
     }
 
+    .col2-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'bpa-area' 'info-p';
+    }
+
     .col2-logo {
         left: 20px;
         grid-template-columns: 120px 1fr;
@@ -188,13 +221,14 @@ body {
         top: 0;
         height: 50px;
         width: 100vw;
+        position: sticky;
     }
 
     .sidename .brand {
         transform: rotate(0deg);
         position: absolute;
         display: block;
-        width: 100vw;
+        width: 90vw;
         font-weight: 900;
     }
 }
