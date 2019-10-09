@@ -220,7 +220,7 @@ body {
         right: 0;
         top: 0;
         height: 50px;
-        width: 100vw;
+        width: 100%; /* jika kamu digunakan 100vw maka akan ada bug pada small screen */
         position: sticky;
     }
 
