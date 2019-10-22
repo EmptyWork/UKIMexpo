@@ -12,155 +12,119 @@
     <title>UKIMexpo Informatika</title>
     <link rel="stylesheet" href="cores/main.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <script>
-        function displayNextImage() {
-            x = (x === images.length - 1) ? 0 : x + 1;
-            document.getElementById("landing").style.backgroundImage = images[x];
-        }
-
-        function displayPreviousImage() {
-            x = (x <= 0) ? images.length - 1 : x - 1;
-            document.getElementById("landing").style.backgroundImage = images[x];
-        }
-
-        function startTimer() {
-            setInterval(displayNextImage, 10000);
-        }
-
-        var images = [],
-            x = -1;
-        images[0] = "url('img/img_s1.jpg')";
-        images[1] = "url('img/img_s2.jpg')";
-        images[2] = "url('img/img_s3.jpg')";
-        images[3] = "url('img/header.jpg')";
-    </script>
 </head>
 
-<body onload="startTimer()">
-    <div id="landing">
-        <div class="col2-logo">
-            <img id="un_logo" src="img/ukim.png" alt="Universitas Kristen Indonesia Maluku">
-            <div id="brd_txt">
-                <h1>UKIMexpo 2019</h1>
-                <small>Program Studi Informatika</small>
-            </div>
-        </div>
-    </div>
+<body>
     <div class="sidename">
         <div class="brand">UKIMexpo Program Studi Informatika</div>
     </div>
-    <div id="middle">
-        <div id="grid" class="col2-grid">
-            <div class="lft-col2">
-                <q>Fokus kepada hal yang membuat dirimu bosan!</q>
-                <small>Admin</small>
-                <h3>Program Studi Informatika</h3>
-                <p>Sebagai Program Studi baru di UKIM (Universitas Kristen Indonesia Maluku), kami tidak mau kalah
-                    dengan
-                    mahasiswa-mahasiswi dari Program Studi lain.</p>
-                <h4>Apa itu Program Studi Informatika?</h4>
-                <p>Program studi Informatika merupakan Program studi yang baru di bentuk pada Bulan Juni 2019 di
-                    Universitas
-                    Kristen Indonesia Maluku dan untuk saat ini memiliki 60 mahasiswa-mahasiswi pejuang Titel
-                    <i><b>S.Kom</b></i>, Prodi Informatika diharapkan menjadi Prodi yang bisa menghasilkan para calon
-                    professional yang bisa menguasai <i><b>Application Developer</b></i> dan <i><b>Network
-                            Engineering</b></i>
-                </p>
-                <q>Kamu Bisa Menjadi <b>Sarjana Komputer (<i>S.Kom</i>) HANYA 3,5 TAHUN</b>, dimana? di <b>UKIM</b> </q>
-                <h5>Media Sosial dan Website</h5>
-                <div class="media-3md">
+    <header>
+        <div class="col2-logo s">
+            <img id="un_logo" src="img/ukim.png" alt="Universitas Kristen Indonesia Maluku">
+            <div id="brd_txt" style="text-align: left;">
+                <h1 style="color: #000">UKIMexpo 2019</h1>
+                <small style="color: #000">Program Studi Informatika</small>
+            </div>
+            <div class="hidden" id="img"></div>
+        </div>
+        <div id="grid" class="col3-grid ls">
+            <div>
+                <h1>Visi</h1>
+                Menjadi program studi berkualitas yang menghasilkan Sarjana Komputer berkompeten dan mandiri dalam
+                bidang jaringan komputer (Network Engineering) dan pengembangan aplikasi perangkat lunak (Application
+                Development) dilandasi iman dan kasih.
+                <h1>Misi</h1>
+                <ul>
+                    <li>
+                        Melaksanakan pendidikan dan pengajaran di bidang informatika untuk menghasilkan lulusan yang
+                        memiliki kepribadian yang tangguh, percaya diri, dan cerdas, profesional, inspiratif dan
+                        inovatif.
+                    </li>
+                    <li>
+                        Melaksanakan dan mengembangkan penelitian serta mempublikasikan hasil penelitian di bidang
+                        informatika.
+                    </li>
+                    <li>
+                        Melaksanakan dan mengembangkan kegiatan pengabdian kepada masyarakat sesuai dengan kebutuhan
+                        sebagai bentuk pelayanan dan pemberdayaan bagi masyarakat berbasis kepulauan.
+                    </li>
+                </ul> <br />
+                <a href="index-n.html" class="btn btn-dir lg-hidden">Struktur Website</a>
+            </div>
+            <div>
+                <h1>Profile Lulusan</h1>
+                Profil lulusan dari Program Studi Informatika
+                <div id="grid" class="col2-grid-nw" style="padding: 0px;">
+                    <div style="padding: 10px; background:springgreen">
+                        <h4 style="margin: 10px">Application Developer</h4>
+                        <ul>
+                            <li>Technopreneur</li>
+                            <li>IT Consultant</li>
+                            <li>Programmer</li>
+                            <li>Software & Database Engineer</li>
+                            <li>Data Scientist</li>
+                            <li>Web Developer</li>
+                            <li>System Analyst</li>
+                            <li>etc</li>
+                        </ul>
+                    </div>
+                    <div style="padding: 10px; background:cornflowerblue;">
+                        <h4 style="margin: 10px">Network Engineer</h4>
+                        <ul>
+                            <li>Technopreneur</li>
+                            <li>IT Consultant</li>
+                            <li>Network & Security Engineer</li>
+                            <li>Network Penetration Tester</li>
+                            <li>Network Administrator </li>
+                            <li>etc</li>
+                        </ul>
+                    </div>
+                </div>
+                <h1>Proyek</h1>
+                Daftar Proyek-Proyek yang ada dalam UKIM Expo 2019
+                <ul>
+                    <li>Pembuatan Film Pendek</li>
+                    <li>Pembuatan Video Scribble</li>
+                    <li>Pembuatan Gif (Gambar bergerak)</li>
+                </ul><br>
+                <a href="index-n.html" class="btn btn-dir hidden">Struktur Website</a>
+            </div>
+            <div style="background: #000; color: #fff">
+                <h4>Ketentuan dan Pembuat</h4>
+                <div class="media-3md" style="padding: 0px;">
                     <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/ms-fico.svg" alt="Facebook"></a>
                     <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/ms-iico.png"
                             alt="Instagram"></a>
                     <a href="http://Informatikaukim.blogspot.com" target="_blank" rel="noopener noreferrer"><img
                             src="img/website.png" alt="Website"></a>
                 </div>
-            </div>
-            <div class="right-col2">
-                <h2>Tim Pembuatan<br /></h2>
-                <img src="img/BPA-logo.png" alt="BPA Logo">
-                <p>Berikut adalah Daftar dari Anggota Team kami:</p>
+                &copy;Copyright 2019 - UKIMexpo <br /> Program Studi Informatika<br />
+                Pembuatan oleh <span it="p">Team Website UKIMexpo Prodi Informatika</span>
+                <h4>Didukung oleh</h4>
                 <ol>
-                    <li>G. Stevarth Hoke (<i>Ketua</i>)</li>
-                    <li>Hervin Maitimu</li>
-                    <li>Brians Djanjaan</li>
-                    <li>Dennis R. Lopulissa</li>
-                    <li>Billbright C. Nifaan </li>
+                    <li>
+                        <a href="http://ukim.ac.id" target="_blank" rel="noopener noreferrer">
+                            Universitas Kristen Indonesia Maluku
+                        </a>
+                    </li>
+                    <li>Program Studi Teknik Informatika</li>
+                    <li>Badan Pengurus Mahasiswa Informatika</li>
                 </ol>
+                <h4>Produksi Informatika UKIM 2019</h4>
+                <ol>
+                    <li>
+                        <a href="http://informatikaukim.blogspot.com" target="_blank" rel="noopener noreferrer">
+                            Website Resmi Informatika UKIM
+                        </a>
+                    </li>
+                </ol>
+                <iframe class="map" frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJsa2D8z_obC0R61LiD2srU8k&key=AIzaSyARGQ8n5OuHJrO7lj0UrZgaW8lt24oDaiQ"
+                    allowfullscreen>
+                </iframe>
             </div>
         </div>
-        <h3>Project - Project Pada UKIMexpo</h3>
-        <small>Daftar project-project yang akan di tampilkan selain 'Pengenalan Pembuatan Website'</small><br /><br />
-        <div id="grid" class="col3-grid">
-            <img src="img/placeholder_1.jpg" alt="placeholder">
-            <img src="img/placeholder_2.jpg" alt="placeholder">
-            <img src="img/placeholder_3.jpg" alt="placeholder">
-        </div>
-        <h3>Contoh Website (C.V. Online)</h3>
-        <p>Ini merupakan contoh-contoh website pribadi para professional di bidang IT dari Luar Negeri.</p>
-        <ol>
-            <li><a href="http://redrussak.com/" target="_blank" rel="noopener noreferrer">Red russak</a></li>
-            <li><a href="http://ianenders.com/" target="_blank" rel="noopener noreferrer">Ianenders</a></li>
-            <li><a href="https://jimramsden.com/#" target="_blank" rel="noopener noreferrer">Jim Ramsden</a></li>
-        </ol>
-        <p>Contoh Website pribadi dari Dosen dan Mahasiswa UKIM</p>
-        <ol>
-            <li><a href="http://eazbi.rf.gd" target="_blank">Stevarth Hoke</a></li><small>(Ketua Kelompok -
-                Mahasiswa)</small> - Native Website
-            <li><a href="http://htuhuteru.wordpress.com" target="_blank">HTuhuteru</a></li><small>(Dosen)</small> -
-            Wordpress
-            <li><a href="https://andryan26.blogspot.com/" target="_blank">Andryan</a></li><small>(Mahasiswa)</small> -
-            Blogger
-            <li><i>will be added soon</i>........</li>
-        </ol>
-        <span w>*Ini Hanya Merupakan Prototype Website - semua kode pada website ini bersifat opensource</span>
-        <br />
-    </div>
-    <div id="footer">
-        <div id="middle">
-            <div id="grid" class="col3-grid grid-footer">
-                <div>
-                    <h4>Ketentuan dan Pembuat</h4>
-                    <div class="media-3md">
-                        <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/ms-fico.svg"
-                                alt="Facebook"></a>
-                        <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/ms-iico.png"
-                                alt="Instagram"></a>
-                        <a href="http://Informatikaukim.blogspot.com" target="_blank" rel="noopener noreferrer"><img
-                                src="img/website.png" alt="Website"></a>
-                    </div>
-                    &copy;Copyright 2019 - UKIMexpo <br /> Program Studi Informatika<br />
-                    Pembuatan oleh <span it="p">Team Website UKIMexpo Prodi Informatika</span>
-                </div>
-                <div>
-                    <h4>Didukung oleh</h4>
-                    <ol>
-                        <li>
-                            <a href="http://ukim.ac.id" target="_blank" rel="noopener noreferrer">
-                                Universitas Kristen Indonesia Maluku
-                            </a>
-                        </li>
-                        <li>Program Studi Teknik Informatika</li>
-                        <li>Badan Pengurus Mahasiswa Informatika</li>
-                    </ol>
-                </div>
-                <div>
-                    <h4>Produksi Informatika UKIM 2019</h4>
-                    <ol>
-                        <li>
-                            <a href="http://informatikaukim.blogspot.com" target="_blank" rel="noopener noreferrer">
-                                Website Resmi Informatika UKIM
-                            </a>
-                        </li>
-                    </ol>
-                    <iframe class="map" frameborder="0" style="border:0"
-                        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJsa2D8z_obC0R61LiD2srU8k&key=AIzaSyARGQ8n5OuHJrO7lj0UrZgaW8lt24oDaiQ"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-            </div>
-        </div>
-    </div>
+    </header>
 </body>
 
 </html>

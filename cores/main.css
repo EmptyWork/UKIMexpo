@@ -16,6 +16,12 @@ this file only for frameworking purpose.
     box-sizing: border-box;
 }
 
+header {
+    width: calc(100vw - 40px);
+    min-height: 100vh;
+    margin-left: 40px;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -25,6 +31,12 @@ body {
     padding: 20px;
     max-width: 150px;
     margin: auto;
+}
+
+.btn-dir {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 #grid {
@@ -37,6 +49,10 @@ body {
     justify-items: center;
 }
 
+#grid.col3-gird.ls {
+    align-items: unset !important;
+}
+
 #grid.col3-grid.grid-footer {
     justify-items: start;
     align-items: flex-start;
@@ -44,6 +60,10 @@ body {
 
 #grid.col3-grid.grid-footer div {
     padding: 10px;
+}
+
+#grid.col2-grid-nw {
+    grid-template-columns: 1fr 1fr;
 }
 
 #grid img {
@@ -118,6 +138,7 @@ body {
 }
 
 .col2-logo {
+    max-width: 450px;
     display: grid;
     position: absolute;
     grid-template-columns: 150px 1fr;
@@ -128,6 +149,13 @@ body {
     top: 70px;
 }
 
+.col2-logo.s {
+    max-width: unset;
+    display: grid;
+    position: unset;
+    grid-template-columns: 150px 300px 1fr;
+}
+
 .col2-logo img {
     max-width: 130px;
 }
@@ -135,10 +163,6 @@ body {
 .col2-logo h1 {
     padding: 0;
     margin: 0;
-}
-
-.col2-logo small {
-    color: #fff;
 }
 
 .media-3md {
@@ -175,6 +199,13 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+    .hidden {
+        display: none;
+    }
+    header {
+        width: 100vw;
+        margin-left: 0px;
+    }
 
     #landing {
         height: 100vh;
@@ -194,6 +225,10 @@ body {
         margin-top: 0;
     }
 
+    #grid.col2-grid-nw {
+        grid-template-columns: 1fr;
+    }
+
     #grid.col3-grid {
         grid-template-columns: 1fr;
     }
@@ -209,6 +244,10 @@ body {
 
     .col2-logo {
         left: 20px;
+        grid-template-columns: 120px 1fr;
+    }
+
+    .col2-logo.s {
         grid-template-columns: 120px 1fr;
     }
 
