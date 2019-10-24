@@ -24,7 +24,7 @@ body {
 
 a,a:hover,a:active,a:focus {
     color: var(--adc);
-    font-style: oblique;
+    font-weight: 600;
 }
 
 *[it] {

@@ -15,7 +15,7 @@ this file only for frameworking purpose.
 * {
     box-sizing: border-box;
 }
-
+/* code */
 header {
     width: calc(100vw - 40px);
     min-height: 100vh;
@@ -64,6 +64,29 @@ body {
 
 #grid.col2-grid-nw {
     grid-template-columns: 1fr 1fr;
+}
+
+.str {
+    background: #333333e0;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.str #grid.col2-grid-st {
+    grid-template-columns: 1fr 150px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.str #grid.col2-grid-st .btn {
+    height: auto;
+    font-size: 0.8em;
+    padding: 10px;
+    text-align: center;
 }
 
 #grid img {
@@ -165,6 +188,19 @@ body {
     margin: 0;
 }
 
+.kem-id {
+    padding: 10px;
+    position: fixed;
+    right: 0;
+    bottom: 50px;
+    z-index: 100;
+    background: #000;
+}
+
+.kem-id a {
+    text-decoration: none;
+}
+
 .media-3md {
     margin-top: -10px;
 }
@@ -180,7 +216,7 @@ body {
     top: 0;
     width: 40px;
     height: 100vh;
-    z-index: 3;
+    z-index: 99;
 }
 
 .map {
@@ -269,5 +305,9 @@ body {
         display: block;
         width: 90vw;
         font-weight: 900;
+    }
+
+    .in-ft {
+        margin-bottom: 80px;
     }
 }
