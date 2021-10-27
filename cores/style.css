@@ -8,176 +8,233 @@ this file only for coloring and styling purpose.
 */
 
 :root {
-    --prc: #cecece;
-    --bc : #000000;
-    --adc : #208245;
-    --addc  : #d2d4d6;
+  --prc: #cecece;
+  --bc: #000000;
+  --adc: #208245;
+  --addc: #d2d4d6;
 }
 
 body {
-    background: #fff;
-    color: #303030;
-    font-size: 1.2em;
-    font-family: 'Exo 2', sans-serif;
-    line-height: 30px;
+  background: #fff;
+  color: #303030;
+  font-size: 1.2em;
+  font-family: "Exo 2", sans-serif;
+  line-height: 30px;
 }
 
-a,a:hover,a:active,a:focus {
-    color: var(--adc);
-    font-weight: 600;
+a,
+a:hover,
+a:active,
+a:focus {
+  color: var(--adc);
+  font-weight: 600;
 }
 
 *[it] {
-    color: var(--adc);
+  color: var(--adc);
 }
 
 *[w] {
-    color: red;
+  color: red;
 }
 
 q {
-    padding: 10px;
-    color: #208245;
-    font-style: italic;
+  padding: 10px;
+  color: #208245;
+  font-style: italic;
 }
 
 .col2-logo.s {
-    background: #00ff7f;
-    border-bottom: 5px solid #00ff7f;
-    box-shadow: 0px 2px 20px #0000005e;
+  background: #00ff7f;
+  border-bottom: 5px solid #00ff7f;
+  box-shadow: 0px 2px 20px #0000005e;
 }
 
 .col2-logo #img {
-    width: 100%;
-    height: 100%;
-    background: var(--bc);
-    /* background-image: linear-gradient(45deg, #80e4a5, #2d2566); */
-    background-image: url(../img/header.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: 300ms all ease-in;
-    z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: var(--bc);
+  /* background-image: linear-gradient(45deg, #80e4a5, #2d2566); */
+  background-image: url(../img/header.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 300ms all ease-in;
+  z-index: 1;
 }
 
 .col2-logo #img::after {
-    content: "";
-    background: #0000005e;
-    right: 0;
-    max-width: 1040px;
-    height: 127.98px;
-    z-index: 2;
-    position: absolute;
+  content: "";
+  background: #0000005e;
+  right: 0;
+  max-width: 1040px;
+  height: 127.98px;
+  z-index: 2;
+  position: absolute;
 }
 
-#un_logo, #brd_txt {
-    z-index: 10;
+#un_logo,
+#brd_txt {
+  z-index: 10;
 }
 
 header div {
-    text-align: center;
-    color: #000;
+  text-align: center;
+  color: #000;
 }
 
 #grid.col3-grid.ls div {
-    text-align: left; 
-    font-size: 16px; 
-    padding: 20px;
+  text-align: left;
+  font-size: 16px;
+  padding: 20px;
 }
 
 /* #middle {
     background: #fff;
 } */
 
-#middle h1, #middle h2, #middle h3, #middle h4, #middle h5, #middle h6 {
-    color: var(--adc);
+#middle h1,
+#middle h2,
+#middle h3,
+#middle h4,
+#middle h5,
+#middle h6 {
+  color: var(--adc);
 }
 
 #landing {
-    background: var(--bc);
-    /* background-image: linear-gradient(45deg, #80e4a5, #2d2566); */
-    background-image: url(../img/header.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: 300ms all ease-in;
+  background: var(--bc);
+  /* background-image: linear-gradient(45deg, #80e4a5, #2d2566); */
+  background-image: url(../img/header.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 300ms all ease-in;
 }
 
 #landing::after {
-    background: #0000008f;
+  background: #0000008f;
 }
 
 #footer {
-    background: #000;;
-    color: #d2d4d6;
+  background: #000;
+  color: #d2d4d6;
 }
 
 .sidename {
-    background: #151515;
+  background: #151515;
 }
 
 .sidename .brand {
-    color:#fff;
+  color: #fff;
 }
 
 .tx-mddl {
-    text-align: center;
+  text-align: center;
 }
 
 .btn-dir {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .btn {
-    background: #000;
-    color: #fff;
-    transition: all 200ms ease-in-out;
+  background: #000;
+  color: #fff;
+  transition: all 200ms ease-in-out;
 }
 
 .lg-hidden {
-    display: none;
+  display: none;
 }
 
 .right-col2 {
-    border: 1px solid #cecece;
-    font-size: 0.8em;
+  border: 1px solid #cecece;
+  font-size: 0.8em;
 }
 
 .right-col2 p {
-    text-align: left;
+  text-align: left;
 }
 
 .right-col2 h2 {
-    background: var(--adc);
-    color: #fff !important;
+  background: var(--adc);
+  color: #fff !important;
 }
 
 .right-col2 ol {
-    text-align: left;
+  text-align: left;
 }
 
-.col2-logo h1, .col2-logo small {
-    color: #fff;
+.col2-logo h1,
+.col2-logo small {
+  color: #fff;
 }
 
 .btn:hover {
-    background: #303030;
-    color: #fff;
+  background: #303030;
+  color: #fff;
 }
 
 @media screen and (max-width: 800px) {
-    body {
-        font-size: 1em;
-    }
-    .lg-hidden {
-        display: unset;
-    }
+  body {
+    font-size: 1em;
+  }
+  .lg-hidden {
+    display: unset;
+  }
 }
 
 @media screen and (max-width: 330px) {
-    body {
-        font-size: 0.8em;
-    }
+  body {
+    font-size: 0.8em;
+  }
+}
+
+.warning {
+  font-family: "Montserrat", sans-serif;
+  background-color: #181818;
+  color: #fff;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  line-height: 1.5;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.warning * {
+    padding: 0;
+    margin: 0;
+}
+
+.warning .createby {
+  display: flex;
+  align-items: center;
+  background-color: #252525;
+  width: max-content;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+
+.warning a {
+  color: inherit;
+}
+
+.warning .text-area {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }

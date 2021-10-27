@@ -1,140 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- work_id: stv_w1909_77-01  -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="theme-color" content="#0d0d0d" />
-    <meta name="description"
-        content="Website yang dibuat secara khusus untuk menjadi showcase dalam materi 'Pengenalan Pembuatan Website' " />
+    <meta
+      name="description"
+      content="Website yang dibuat secara khusus untuk menjadi showcase dalam materi 'Pengenalan Pembuatan Website' "
+    />
     <title>UKIMexpo Informatika</title>
-    <link rel="stylesheet" href="cores/main.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="cores/main.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script>
+        const removeOverlay = () => {
+            const overlay = document.querySelector('.warning')
+            overlay.remove()
+        }
+    </script>
+  </head>
 
-<body>
-    <div class="str">
-        <div id="grid" class="col2-grid-st">
-            <small>Untuk Melihat Contoh Website yang telah dibuat</small>
-            <a href="index-n.html" class="btn btn-dir">Klik Saya</a>
+  <body>
+    <div class="warning">
+      <div class="area">
+        <a href="https://emptywork.github.io" target="_blank" class="createby">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.65 8.42634L14.8715 5.20767L18.1667 8.50567V14.2517L14.7667 17.6517V10.1178L11.65 13.2345V15.1017L8.24998 18.5017V16.6345L7.39998 17.4845V12.6763L8.24998 11.8263V7.00117L11.65 3.60117V8.42634Z"
+            />
+            <path
+              d="M7.23 17.6573L7.4 17.4845V19.3517L4 22.7517V5.18501H7.4V12.6763L4.82733 15.2518L7.23 17.6573Z"
+            />
+            <path
+              d="M14.472 0L21 6.52801V11.3362L18.1667 8.50284V5.18501H14.8913L14.8715 5.20484L12.0665 2.40267L14.472 0Z"
+            />
+          </svg>
+          Emptywork
+        </a>
+        <div class="text-area">
+          <h1>UKIMEXPO 2019</h1>
+          <p style="font-size: 1rem; color: #cecece">
+            this website was created 2 years ago<br/> and was only for showcase purpose.<br /> so the 'look of it' is not age well.
+          </p>
+          <a onclick="removeOverlay();" style="margin-top: 0.4rem; color: #cecece; font-size: 1rem;" href="#">close this message</a>
         </div>
+      </div>
+    </div>
+    <div class="str">
+      <div id="grid" class="col2-grid-st">
+        <small>Untuk Melihat Contoh Website yang telah dibuat</small>
+        <a href="showcase.html" class="btn btn-dir">Klik Saya</a>
+      </div>
     </div>
     <div class="sidename">
-        <div class="brand">UKIMexpo Program Studi Informatika</div>
+      <div class="brand">UKIMexpo Program Studi Informatika</div>
     </div>
     <header>
-        <div class="col2-logo s">
-            <img id="un_logo" src="img/ukim.png" alt="Universitas Kristen Indonesia Maluku">
-            <div id="brd_txt" style="text-align: left;">
-                <h1 style="color: #000">UKIMexpo 2019</h1>
-                <small style="color: #000">Program Studi Informatika</small>
-            </div>
-            <div class="hidden" id="img"></div>
+      <div class="col2-logo s">
+        <img id="un_logo" src="img/ukim.png" alt="Universitas Kristen Indonesia Maluku" />
+        <div id="brd_txt" style="text-align: left">
+          <h1 style="color: #000">UKIMexpo 2019</h1>
+          <small style="color: #000">Program Studi Informatika</small>
         </div>
-        <div id="grid" class="col3-grid ls">
-            <div>
-                <h1>Visi</h1>
-                Menjadi program studi berkualitas yang menghasilkan Sarjana Komputer berkompeten dan mandiri dalam
-                bidang jaringan komputer (Network Engineering) dan pengembangan aplikasi perangkat lunak (Application
-                Development) dilandasi iman dan kasih.
-                <h1>Misi</h1>
-                <ul>
-                    <li>
-                        Melaksanakan pendidikan dan pengajaran di bidang informatika untuk menghasilkan lulusan yang
-                        memiliki kepribadian yang tangguh, percaya diri, dan cerdas, profesional, inspiratif dan
-                        inovatif.
-                    </li>
-                    <li>
-                        Melaksanakan dan mengembangkan penelitian serta mempublikasikan hasil penelitian di bidang
-                        informatika.
-                    </li>
-                    <li>
-                        Melaksanakan dan mengembangkan kegiatan pengabdian kepada masyarakat sesuai dengan kebutuhan
-                        sebagai bentuk pelayanan dan pemberdayaan bagi masyarakat berbasis kepulauan.
-                    </li>
-                </ul> <br />
-                <a href="index-n.html" class="btn btn-dir lg-hidden">Struktur Website</a>
-            </div>
-            <div>
-                <h1>Profile Lulusan</h1>
-                Profil lulusan dari Program Studi Informatika
-                <div id="grid" class="col2-grid-nw" style="padding: 0px;">
-                    <div style="padding: 10px; background:springgreen">
-                        <h4 style="margin: 10px">Application Developer</h4>
-                        <ul>
-                            <li>Technopreneur</li>
-                            <li>IT Consultant</li>
-                            <li>Programmer</li>
-                            <li>Software & Database Engineer</li>
-                            <li>Data Scientist</li>
-                            <li>Web Developer</li>
-                            <li>System Analyst</li>
-                            <li>etc</li>
-                        </ul>
-                    </div>
-                    <div style="padding: 10px; background:cornflowerblue;">
-                        <h4 style="margin: 10px">Network Engineer</h4>
-                        <ul>
-                            <li>Technopreneur</li>
-                            <li>IT Consultant</li>
-                            <li>Network & Security Engineer</li>
-                            <li>Network Penetration Tester</li>
-                            <li>Network Administrator </li>
-                            <li>etc</li>
-                        </ul>
-                    </div>
-                </div>
-                <h1>Proyek</h1>
-                Daftar Proyek-Proyek yang ada dalam UKIM Expo 2019
-                <ul>
-                    <li>Pembuatan Film Pendek</li>
-                    <li>Pembuatan Video Scribble</li>
-                    <li>Pembuatan Gif (Gambar bergerak)</li>
-                </ul><br>
-                <a href="index-n.html" class="btn btn-dir hidden">Struktur Website</a>
-            </div>
-            <div style="background: #000; color: #fff;" class="in-ft">
-                <h4>Ketentuan dan Pembuat</h4>
-                <div class="media-3md" style="padding: 0px;">
-                    <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/ms-fico.svg" alt="Facebook"></a>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/ms-iico.png"
-                            alt="Instagram"></a>
-                    <a href="http://Informatikaukim.blogspot.com" target="_blank" rel="noopener noreferrer"><img
-                            src="img/website.png" alt="Website"></a>
-                </div>
-                &copy;Copyright 2019 - UKIMexpo <br /> Program Studi Informatika<br />
-                Pembuatan oleh <span it="p">Team Website UKIMexpo Prodi Informatika</span>
-                <h4>Didukung oleh</h4>
-                <ol>
-                    <li>
-                        <a href="http://ukim.ac.id" target="_blank" rel="noopener noreferrer">
-                            Universitas Kristen Indonesia Maluku
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://informatikaukim.blogspot.com" target="_blank" rel="noopener noreferrer">
-                            Program Studi Teknik Informatika
-                        </a>
-                    </li>
-                    <li>Badan Pengurus Mahasiswa Informatika</li>
-                </ol>
-                <h4>Produksi Informatika UKIM 2019</h4>
-                <ol>
-                    <li>
-                        <a href="http://informatikaukim.blogspot.com" target="_blank" rel="noopener noreferrer">
-                            Website Resmi Informatika UKIM
-                        </a>
-                    </li>
-                </ol>
-                <iframe class="map" frameborder="0" style="border:0"
-                    src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJsa2D8z_obC0R61LiD2srU8k&key=AIzaSyARGQ8n5OuHJrO7lj0UrZgaW8lt24oDaiQ"
-                    allowfullscreen>
-                </iframe>
-            </div>
+        <div class="hidden" id="img"></div>
+      </div>
+      <div id="grid" class="col3-grid ls">
+        <div>
+          <h1>Visi</h1>
+          Menjadi program studi berkualitas yang menghasilkan Sarjana Komputer berkompeten dan
+          mandiri dalam bidang jaringan komputer (Network Engineering) dan pengembangan aplikasi
+          perangkat lunak (Application Development) dilandasi iman dan kasih.
+          <h1>Misi</h1>
+          <ul>
+            <li>
+              Melaksanakan pendidikan dan pengajaran di bidang informatika untuk menghasilkan
+              lulusan yang memiliki kepribadian yang tangguh, percaya diri, dan cerdas, profesional,
+              inspiratif dan inovatif.
+            </li>
+            <li>
+              Melaksanakan dan mengembangkan penelitian serta mempublikasikan hasil penelitian di
+              bidang informatika.
+            </li>
+            <li>
+              Melaksanakan dan mengembangkan kegiatan pengabdian kepada masyarakat sesuai dengan
+              kebutuhan sebagai bentuk pelayanan dan pemberdayaan bagi masyarakat berbasis
+              kepulauan.
+            </li>
+          </ul>
+          <br />
+          <a href="showcase.html" class="btn btn-dir lg-hidden">Struktur Website</a>
         </div>
+        <div>
+          <h1>Profile Lulusan</h1>
+          Profil lulusan dari Program Studi Informatika
+          <div id="grid" class="col2-grid-nw" style="padding: 0px">
+            <div style="padding: 10px; background: springgreen">
+              <h4 style="margin: 10px">Application Developer</h4>
+              <ul>
+                <li>Technopreneur</li>
+                <li>IT Consultant</li>
+                <li>Programmer</li>
+                <li>Software & Database Engineer</li>
+                <li>Data Scientist</li>
+                <li>Web Developer</li>
+                <li>System Analyst</li>
+                <li>etc</li>
+              </ul>
+            </div>
+            <div style="padding: 10px; background: cornflowerblue">
+              <h4 style="margin: 10px">Network Engineer</h4>
+              <ul>
+                <li>Technopreneur</li>
+                <li>IT Consultant</li>
+                <li>Network & Security Engineer</li>
+                <li>Network Penetration Tester</li>
+                <li>Network Administrator</li>
+                <li>etc</li>
+              </ul>
+            </div>
+          </div>
+          <h1>Proyek</h1>
+          Daftar Proyek-Proyek yang ada dalam UKIM Expo 2019
+          <ul>
+            <li>Pembuatan Film Pendek</li>
+            <li>Pembuatan Video Scribble</li>
+            <li>Pembuatan Gif (Gambar bergerak)</li>
+          </ul>
+          <br />
+          <a href="showcase.html" class="btn btn-dir hidden">Struktur Website</a>
+        </div>
+        <div style="background: #000; color: #fff" class="in-ft">
+          <h4>Ketentuan dan Pembuat</h4>
+          <div class="media-3md" style="padding: 0px">
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              ><img src="img/ms-fico.svg" alt="Facebook"
+            /></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              ><img src="img/ms-iico.png" alt="Instagram"
+            /></a>
+            <a href="http://filkom.ukim.ac.id" target="_blank" rel="noopener noreferrer"
+              ><img src="img/website.png" alt="Website"
+            /></a>
+          </div>
+          &copy;Copyright 2019 - UKIMexpo <br />
+          Program Studi Informatika<br />
+          Pembuatan oleh <span it="p">Team Website UKIMexpo Prodi Informatika</span>
+          <h4>Didukung oleh</h4>
+          <ol>
+            <li>
+              <a href="http://ukim.ac.id" target="_blank" rel="noopener noreferrer">
+                Universitas Kristen Indonesia Maluku
+              </a>
+            </li>
+            <li>
+              <a href="http://filkom.ukim.ac.id" target="_blank" rel="noopener noreferrer">
+                Program Studi Teknik Informatika
+              </a>
+            </li>
+            <li>Badan Pengurus Mahasiswa Informatika</li>
+          </ol>
+          <h4>Produksi Informatika UKIM 2019</h4>
+          <ol>
+            <li>
+              <a href="http://filkom.ukim.ac.id" target="_blank" rel="noopener noreferrer">
+                Website Resmi Informatika UKIM
+              </a>
+            </li>
+          </ol>
+          <iframe
+            class="map"
+            frameborder="0"
+            style="border: 0"
+            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJsa2D8z_obC0R61LiD2srU8k&key=AIzaSyARGQ8n5OuHJrO7lj0UrZgaW8lt24oDaiQ"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
     </header>
-</body>
-
+  </body>
 </html>
