@@ -16,12 +16,13 @@
     <script>
         const removeOverlay = () => {
             const overlay = document.querySelector('.warning')
+            document.body.classList.remove('noscroll')
             overlay.remove()
         }
     </script>
   </head>
 
-  <body>
+  <body class="noscroll">
     <div class="warning">
       <div class="area">
         <a href="https://emptywork.github.io" target="_blank" class="createby">
@@ -47,7 +48,7 @@
         <div class="text-area">
           <h1>UKIMEXPO 2019</h1>
           <p style="font-size: 1rem; color: #cecece">
-            this website was created 2 years ago<br/> and was only for showcase purpose.<br /> so the 'look of it' is not age well.
+            this website was created <span id="currentYear">2</span> years ago<br/> and was only for showcase purpose.<br /> so the 'look of it' is not age well.
           </p>
           <a onclick="removeOverlay();" style="margin-top: 0.4rem; color: #cecece; font-size: 1rem;" href="#">close this message</a>
         </div>
@@ -185,5 +186,14 @@
         </div>
       </div>
     </header>
+    <script>
+      const date = new Date()
+      const currentYearElement = document.getElementById('currentYear')
+      const getCurrentYear = date.getFullYear()
+      const timePassed = getCurrentYear - 2019
+
+      currentYearElement.innerText = timePassed
+
+    </script>
   </body>
 </html>

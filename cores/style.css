@@ -238,3 +238,7 @@ header div {
   flex-direction: column;
   gap: 0.5rem;
 }
+
+.noscroll {
+  overflow: hidden;
+}

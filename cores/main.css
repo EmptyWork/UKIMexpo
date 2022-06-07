@@ -295,7 +295,7 @@ body {
         right: 0;
         top: 0;
         height: 50px;
-        width: 100%; /* jika kamu digunakan 100vw maka akan ada bug pada small screen */
+        width: 100%; /* jika kamu menggunakan 100vw maka akan ada bug pada small screen */
         position: sticky;
     }
 
